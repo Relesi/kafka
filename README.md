@@ -179,20 +179,23 @@ Please note for this to work you should create/update user maven settings (typic
 
 ### Installing the jars to the local Maven repository ###
 The recommended command is:
-
+    
     ./gradlewAll publishToMavenLocal
 
 For backwards compatibility, the following also works:
-
+    
     ./gradlewAll install
 
 ### Building the test jar ###
+    
     ./gradlew testJar
 
 ### Determining how transitive dependencies are added ###
+    
     ./gradlew core:dependencies --configuration runtime
 
 ### Determining if any dependencies could be updated ###
+    
     ./gradlew dependencyUpdates
 
 ### Running code quality checks ###
